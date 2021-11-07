@@ -6,8 +6,8 @@ import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 import createEmotionServer from '@emotion/server/create-instance';
 
-const APP_NAME = 'almond hydroponics';
-const APP_DESCRIPTION = 'Almond Hydroponics - Growing your plants smart.';
+const APP_NAME = 'musings sphere';
+const APP_DESCRIPTION = 'Share your thoughts and ideas.';
 
 const getCache = () => {
 	const cache = createCache({ key: 'css', prepend: true });
@@ -150,7 +150,7 @@ export default class MyDocument extends Document {
 					/>
 
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
-					<link href="//db.onlinewebfonts.com/c/6161cdd41fd3d8d1758d507966b36c6f?family=GoudyOldStyleMTW01" rel="stylesheet" type="text/css"/>
+					<link href="https://db.onlinewebfonts.com/c/6161cdd41fd3d8d1758d507966b36c6f?family=GoudyOldStyleMTW01" rel="stylesheet" type="text/css"/>
 					<link href="https://www.dafontfree.net/embed/Z291ZHktb2xkLXN0eWxlLXJlZ3VsYXImZGF0YS8yNS9nLzEyNzY1NC9HT1VET1MudHRm" rel="stylesheet" type="text/css"/>
 					<link
 						href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@100;200;300;400;500;700;900&display=swap"

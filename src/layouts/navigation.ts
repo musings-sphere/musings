@@ -3,16 +3,12 @@ const pages = [
 		groupTitle: 'Services',
 		pages: [
 			{
-				title: 'Resources',
-				href: '/resources',
+				title: 'About',
+				href: '/about',
 			},
 			{
-				title: 'Portfolio',
-				href: '/portfolio',
-			},
-			{
-				title: 'Latest news',
-				href: '/blog-newsroom',
+				title: 'Latest stories',
+				href: '/stories',
 			},
 		],
 	},

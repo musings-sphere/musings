@@ -51,7 +51,7 @@ const Hero = (): JSX.Element => {
 						</Typography>
 					</Box>
 					<Box>
-						<Button variant="contained" color="secondary">
+						<Button variant="contained" color="primary">
 							Share writing
 						</Button>
 					</Box>

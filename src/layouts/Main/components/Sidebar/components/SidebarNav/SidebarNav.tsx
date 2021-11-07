@@ -70,18 +70,6 @@ const SidebarNav = ({ onClose }: Props): JSX.Element => {
 				</Box>
 				<Divider sx={{ marginBottom: 2 }} />
 				{renderAuthButtons()}
-				<Box marginTop={2}>
-					<Button
-						variant="contained"
-						color="primary"
-						fullWidth
-						component="a"
-						target="blank"
-						onClick={() => router.push('/store')}
-					>
-						Go to store
-					</Button>
-				</Box>
 				{renderAuthModal()}
 			</Box>
 			<Container paddingY={2} sx={{ bottom: 0, position: 'fixed' }}>

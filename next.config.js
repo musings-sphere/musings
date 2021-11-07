@@ -1,6 +1,7 @@
 // next.config.js
-const withPWA = require('next-pwa');
-const runtimeCaching = require('next-pwa/cache');
+// const withPWA = require('next-pwa');
+// const runtimeCaching = require('next-pwa/cache');
+const withOffline = require('next-offline')
 const securityHeaders = [
 	{
 		key: 'X-Content-Type-Options',
@@ -24,17 +25,17 @@ const securityHeaders = [
 	},
 ];
 
-module.exports = withPWA({
-  swcMinify: true,
+module.exports = withOffline({
+  // swcMinify: true,
   reactStrictMode: true,
-  pwa: {
-    dest: 'public',
-    disable: process.env.NODE_ENV === 'development',
-    runtimeCaching,
-    // fallbacks: {
-    //   image: '/static/images/fallback.png',
-    // }
-  },
+  // pwa: {
+  //   dest: 'public',
+  //   disable: process.env.NODE_ENV === 'development',
+  //   runtimeCaching,
+  //   // fallbacks: {
+  //   //   image: '/static/images/fallback.png',
+  //   // }
+  // },
 	images: {
 		// disableStaticImages: true,
 		domains: ['static.almondhydroponics.com', 'assets.maccarianagency.com'],
@@ -51,5 +52,30 @@ module.exports = withPWA({
 				headers: securityHeaders,
 			},
 		];
-	}
+	},
+  workboxOpts: {
+    swDest: process.env.NEXT_EXPORT
+      ? 'service-worker.js'
+      : 'static/service-worker.js',
+    runtimeCaching: [
+      {
+        urlPattern: /^https?.*/,
+        handler: 'NetworkFirst',
+        options: {
+          cacheName: 'offlineCache',
+          expiration: {
+            maxEntries: 200,
+          },
+        },
+      },
+    ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/service-worker.js',
+        destination: '/_next/static/service-worker.js',
+      },
+    ]
+  },
 });

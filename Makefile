@@ -1,5 +1,5 @@
 # Project variables
-PROJECT_NAME ?= musings-fe
+PROJECT_NAME ?= musings
 TARGET_MAX_CHAR_NUM=10
 # File names
 DOCKER_DEV_COMPOSE_FILE := docker-compose.yml
@@ -27,14 +27,14 @@ help:
 #@-- command to build the application image--@#
 background:
 	@ ${INFO} "Building required docker images"
-	@ docker-compose -f $(DOCKER_DEV_COMPOSE_FILE) build web
+	@ docker-compose -f $(DOCKER_DEV_COMPOSE_FILE) build musings
 	@ ${INFO} "Starting background local development server"
 	@ docker-compose -f $(DOCKER_DEV_COMPOSE_FILE) up -d
 
 #@-- command to start the application container --@#
 start:
 	@ ${INFO} "Building required docker images"
-	@ docker-compose -f $(DOCKER_DEV_COMPOSE_FILE) build web
+	@ docker-compose -f $(DOCKER_DEV_COMPOSE_FILE) build musings
 	@ ${SUCCESS} "Build Completed successfully"
 	@ echo " "
 	@ ${INFO} "Starting local development server"
@@ -49,7 +49,7 @@ stop:
 #@-- command to test the application --@#
 test:background
 	@ ${INFO} "Running tests in docker container"
-	@ docker-compose -f $(DOCKER_DEV_COMPOSE_FILE) exec web yarn test
+	@ docker-compose -f $(DOCKER_DEV_COMPOSE_FILE) exec musings yarn test
 
 #@-- command to remove the images created --@#
 clean:
@@ -64,7 +64,7 @@ clean:
 #@-- command to ssh into service container --@#
 ssh:background
 	${INFO} "Opening web container terminal"
-	@ docker-compose -f $(DOCKER_DEV_COMPOSE_FILE) exec web bash
+	@ docker-compose -f $(DOCKER_DEV_COMPOSE_FILE) exec musings bash
 
 #@-- help should be run by default when no command is specified --@#
 default: help

@@ -23,8 +23,8 @@ const IndexView = (): JSX.Element => {
 			<Box
 				sx={{
 					position: 'relative',
-					backgroundColor: theme.palette.alternate.main,
-					backgroundImage: `linear-gradient(120deg, ${theme.palette.alternate.dark} 0%, ${theme.palette.background.paper} 100%)`,
+					backgroundColor: '#D5E4EB',
+					// backgroundImage: `linear-gradient(120deg, ${theme.palette.alternate.dark} 0%, ${theme.palette.background.paper} 100%)`,
 					// marginTop: -13,
 					// paddingTop: 13,
 				}}

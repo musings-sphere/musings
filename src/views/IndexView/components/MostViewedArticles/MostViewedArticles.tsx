@@ -127,11 +127,12 @@ const MostViewedArticles = (): JSX.Element => {
 									display: 'flex',
 									flexDirection: 'column',
 									justifyContent: 'center',
-									paddingTop: 0
+									padding: { xs: 0, md: 1 }
 								}}
 							>
 								<Typography
 									fontWeight={700}
+									marginTop={{xs: 1, md: 0}}
 									// sx={{ textTransform: 'uppercase' }}
 								>
 									{item.title}
@@ -160,7 +161,7 @@ const MostViewedArticles = (): JSX.Element => {
 										size={'small'}
 									/>
 											</div>
-									<BookmarkAddOutlined />
+									<BookmarkAddOutlined sx={{ cursor: "pointer" }} />
 									</Stack>
 								</Box>
 								<Typography color="text.secondary">
