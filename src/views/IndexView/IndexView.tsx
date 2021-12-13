@@ -12,7 +12,7 @@ import {
 	Tags,
 } from './components';
 
-const IndexView = (): JSX.Element => {
+const IndexView = ({ allPosts: { edges }, preview }): JSX.Element => {
 	const theme = useTheme();
 	const isMd = useMediaQuery(theme.breakpoints.up('md'), {
 		defaultMatches: true,
@@ -23,8 +23,8 @@ const IndexView = (): JSX.Element => {
 			<Box
 				sx={{
 					position: 'relative',
-					backgroundColor: theme.palette.alternate.main,
-					backgroundImage: `linear-gradient(120deg, ${theme.palette.alternate.dark} 0%, ${theme.palette.background.paper} 100%)`,
+					backgroundColor: '#D5E4EB',
+					// backgroundImage: `linear-gradient(120deg, ${theme.palette.alternate.dark} 0%, ${theme.palette.background.paper} 100%)`,
 					// marginTop: -13,
 					// paddingTop: 13,
 				}}
@@ -56,7 +56,7 @@ const IndexView = (): JSX.Element => {
 				<Container>
 					<Grid container spacing={isMd ? 8 : 0}>
 						<Grid item xs={12} md={8}>
-							<MostViewedArticles />
+							<MostViewedArticles posts={edges} />
 						</Grid>
 						<Grid item xs={12} md={4}>
 							<Tags />

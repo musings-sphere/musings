@@ -81,7 +81,7 @@ function App({
 					name="viewport"
 					content="width=device-width, initial-scale=1, shrink-to-fit=no"
 				/>
-				<title>almond</title>
+				<title>musings</title>
 			</Head>
 			<Provider store={store}>
 				<ComponentProvider>

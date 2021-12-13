@@ -22,7 +22,7 @@ COPY . /app
 RUN yarn install --immutable
 RUN yarn build
 
-EXPOSE 3000
+EXPOSE 3002
 CMD ["yarn", "start"]
 
 
