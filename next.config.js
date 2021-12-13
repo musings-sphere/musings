@@ -38,7 +38,7 @@ module.exports = withOffline({
   // },
 	images: {
 		// disableStaticImages: true,
-		domains: ['static.almondhydroponics.com', 'assets.maccarianagency.com'],
+		domains: ['static.almondhydroponics.com', 'assets.maccarianagency.com', 'wordpress.almondhydroponics.com'],
 	},
   eslint: {
     // Warning: If set to true, this allows production builds to successfully complete even if

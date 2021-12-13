@@ -67,86 +67,86 @@ export default class MyDocument extends Document {
 						property="og:image"
 						content="https://static.almondhydroponics.com/static/icons/android-icon-192x192.png"
 					/>
-					<meta property="og:title" content="almond" />
+					<meta property="og:title" content="musings" />
 					<meta
 						property="og:description"
 						content="Grow food hydroponically."
 					/>
-					<meta property="og:url" content="https://almondhydroponics.com/" />
+					<meta property="og:url" content="https://blog.almondhydroponics.com/" />
 
 					<link rel="manifest" href="/manifest.json" />
 					<link
 						rel="shortcut icon"
-						href="https://storage.googleapis.com/static.almondhydroponics.com/static/icons/favicon.ico"
+						href="/images/favicon.ico"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="57x57"
-						href="https://static.almondhydroponics.com/static/icons/apple-icon-57x57.png"
+						href="/images/apple-icon-57x57.png"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="60x60"
-						href="https://static.almondhydroponics.com/static/icons/apple-icon-60x60.png"
+						href="/images/apple-icon-60x60.png"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="72x72"
-						href="https://static.almondhydroponics.com/static/icons/apple-icon-72x72.png"
+						href="/images/apple-icon-72x72.png"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="76x76"
-						href="https://static.almondhydroponics.com/static/icons/apple-icon-76x76.png"
+						href="/images/apple-icon-76x76.png"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="114x114"
-						href="https://static.almondhydroponics.com/static/icons/apple-icon-114x114.png"
+						href="/images/apple-icon-114x114.png"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="120x120"
-						href="https://static.almondhydroponics.com/static/icons/apple-icon-120x120.png"
+						href="/images/apple-icon-120x120.png"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="144x144"
-						href="https://static.almondhydroponics.com/static/icons/apple-icon-144x144.png"
+						href="/images/apple-icon-144x144.png"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="152x152"
-						href="https://static.almondhydroponics.com/static/icons/apple-icon-152x152.png"
+						href="/images/apple-icon-152x152.png"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="180x180"
-						href="https://static.almondhydroponics.com/static/icons/apple-icon-180x180.png"
+						href="/images/apple-icon-180x180.png"
 					/>
 					<link
 						rel="icon"
 						type="image/png"
 						sizes="192x192"
-						href="https://static.almondhydroponics.com/static/icons/android-icon-192x192.png"
+						href="/images/android-icon-192x192.png"
 					/>
 					<link
 						rel="icon"
 						type="image/png"
 						sizes="32x32"
-						href="https://static.almondhydroponics.com/static/icons/favicon-32x32.png"
+						href="/images/favicon-32x32.png"
 					/>
 					<link
 						rel="icon"
 						type="image/png"
 						sizes="96x96"
-						href="https://static.almondhydroponics.com/static/icons/favicon-96x96.png"
+						href="/images/favicon-96x96.png"
 					/>
 					<link
 						rel="icon"
 						type="image/png"
 						sizes="16x16"
-						href="https://static.almondhydroponics.com/static/icons/favicon-16x16.png"
+						href="/images/favicon-16x16.png"
 					/>
 
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
